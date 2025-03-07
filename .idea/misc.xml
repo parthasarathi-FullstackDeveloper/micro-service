@@ -7,10 +7,26 @@
         <option value="$PROJECT_DIR$/registry/pom.xml" />
         <option value="$PROJECT_DIR$/service/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/User Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Product Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Cart Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Payment Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Notification Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Inventory Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Users Service/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Us Service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Cart Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Users Service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/.." />
   </component>
 </project>
