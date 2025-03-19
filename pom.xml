@@ -10,12 +10,11 @@
 
     <modules>
         <module>registry</module>
-        <module>Cart Service</module>
         <module>Inventory Service</module>
         <module>Notification Service</module>
         <module>Payment Service</module>
         <module>Product Service</module>
-        <module>Users Service</module>
+        <module>User Service</module>
         <module>gateway</module>
     </modules>
 
