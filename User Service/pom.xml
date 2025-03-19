@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.microservice</groupId>
-	<artifactId>Us Service</artifactId>
+	<artifactId>Us-Service</artifactId> <!-- Fixed artifactId name (no spaces) -->
 	<version>0.0.1-SNAPSHOT</version>
 	<name>service</name>
 	<description>Demo project for Spring Boot</description>
@@ -89,5 +89,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
