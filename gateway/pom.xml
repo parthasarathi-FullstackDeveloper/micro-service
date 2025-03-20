@@ -7,71 +7,50 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.10</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<groupId>com.microservice</groupId>
 	<artifactId>gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gateway</name>
-	<description>Demo project for Spring Boot</description>
+	<description>API Gateway with Spring Cloud</description>
 
 	<properties>
 		<java.version>8</java.version>
-		<spring-cloud.version>2021.0.4</spring-cloud.version> <!-- Updated Spring Cloud version -->
+		<spring-cloud.version>2021.0.4</spring-cloud.version>
 	</properties>
 
 	<dependencies>
-		<!-- Spring Boot Starter Web (Reactive) -->
-
-
-		<!-- Spring Boot Actuator -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.30</version> <!-- Specify the version you want -->
-		</dependency>
-		<!-- Spring Cloud Gateway -->
+		<!-- Spring Cloud Gateway (API Gateway) -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
 
-		<!-- Spring Cloud Eureka Client -->
+		<!-- Eureka Client for Service Discovery -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-		<!-- Spring Cloud Commons -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-commons</artifactId>
-		</dependency>
+		<!-- Lombok (For reducing boilerplate code) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.24</version> <!-- Specify the version you want -->
-			<scope>provided</scope> <!-- Lombok is provided at compile time, not runtime -->
+			<scope>provided</scope>
 		</dependency>
-		<!-- Spring Boot Test -->
+
+		<!-- Spring Boot Actuator (For Monitoring and Management) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Spring Cloud Dependencies (for managing versions) -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -84,7 +63,6 @@
 
 	<build>
 		<plugins>
-			<!-- Spring Boot Maven Plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
